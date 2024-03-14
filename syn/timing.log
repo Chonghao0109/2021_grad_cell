@@ -1,0 +1,145 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : geofence
+Version: Q-2019.12
+Date   : Wed Mar 13 21:46:33 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: sqrt_a_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: S_reg[10] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  sqrt_a_reg[18]/CK (DFFQX1)                              0.00       0.50 r
+  sqrt_a_reg[18]/Q (DFFQX1)                               0.71       1.21 r
+  sqrt_u1/a[18] (geofence_DW_sqrt_0)                      0.00       1.21 r
+  sqrt_u1/U27/Y (NOR2X1)                                  0.22       1.43 f
+  sqrt_u1/U6/Y (CLKBUFX3)                                 0.52       1.96 f
+  sqrt_u1/U105/Y (NOR2X1)                                 0.46       2.42 r
+  sqrt_u1/u_fa_PartRem_8_2/CO (ADDFXL)                    0.82       3.24 r
+  sqrt_u1/U26/Y (AOI21X1)                                 0.17       3.40 f
+  sqrt_u1/U5/Y (CLKBUFX3)                                 0.62       4.03 f
+  sqrt_u1/U100/Y (XNOR2X1)                                0.49       4.52 r
+  sqrt_u1/u_fa_PartRem_7_2/CO (ADDFXL)                    0.84       5.36 r
+  sqrt_u1/u_fa_PartRem_7_3/CO (ADDFXL)                    0.49       5.85 r
+  sqrt_u1/U20/Y (NOR2BX1)                                 0.18       6.03 f
+  sqrt_u1/U4/Y (CLKBUFX3)                                 0.58       6.60 f
+  sqrt_u1/U91/Y (XNOR2X1)                                 0.48       7.08 r
+  sqrt_u1/u_fa_PartRem_6_2/CO (ADDFXL)                    0.84       7.92 r
+  sqrt_u1/u_fa_PartRem_6_3/CO (ADDFXL)                    0.50       8.42 r
+  sqrt_u1/u_fa_PartRem_6_4/CO (ADDFXL)                    0.49       8.91 r
+  sqrt_u1/U23/Y (NOR2BX1)                                 0.18       9.08 f
+  sqrt_u1/U22/Y (CLKBUFX3)                                0.58       9.67 f
+  sqrt_u1/U102/Y (OAI21XL)                                0.58      10.24 r
+  sqrt_u1/U101/Y (OAI21XL)                                0.42      10.67 f
+  sqrt_u1/u_fa_PartRem_5_3/CO (ADDFXL)                    0.78      11.45 f
+  sqrt_u1/u_fa_PartRem_5_4/CO (ADDFXL)                    0.53      11.98 f
+  sqrt_u1/u_fa_PartRem_5_5/CO (ADDFXL)                    0.52      12.50 f
+  sqrt_u1/U15/Y (NOR2BX1)                                 0.24      12.74 r
+  sqrt_u1/U14/Y (CLKBUFX3)                                0.50      13.24 r
+  sqrt_u1/U70/Y (XNOR2X1)                                 0.45      13.69 r
+  sqrt_u1/u_fa_PartRem_4_2/CO (ADDFXL)                    0.84      14.54 r
+  sqrt_u1/u_fa_PartRem_4_3/CO (ADDFXL)                    0.50      15.03 r
+  sqrt_u1/u_fa_PartRem_4_4/CO (ADDFXL)                    0.50      15.53 r
+  sqrt_u1/u_fa_PartRem_4_5/CO (ADDFXL)                    0.50      16.03 r
+  sqrt_u1/u_fa_PartRem_4_6/CO (ADDFXL)                    0.49      16.51 r
+  sqrt_u1/U13/Y (NOR2BX1)                                 0.18      16.69 f
+  sqrt_u1/U12/Y (CLKBUFX3)                                0.63      17.32 f
+  sqrt_u1/U74/Y (OAI21XL)                                 0.60      17.92 r
+  sqrt_u1/U73/Y (OAI21XL)                                 0.43      18.35 f
+  sqrt_u1/u_fa_PartRem_3_3/CO (ADDFXL)                    0.78      19.13 f
+  sqrt_u1/u_fa_PartRem_3_4/CO (ADDFXL)                    0.53      19.66 f
+  sqrt_u1/u_fa_PartRem_3_5/CO (ADDFXL)                    0.53      20.19 f
+  sqrt_u1/u_fa_PartRem_3_6/CO (ADDFXL)                    0.53      20.71 f
+  sqrt_u1/u_fa_PartRem_3_7/CO (ADDFXL)                    0.52      21.24 f
+  sqrt_u1/U18/Y (NOR2BX1)                                 0.24      21.48 r
+  sqrt_u1/U17/Y (CLKBUFX3)                                0.51      21.99 r
+  sqrt_u1/U82/Y (XNOR2X1)                                 0.46      22.45 r
+  sqrt_u1/u_fa_PartRem_2_2/CO (ADDFXL)                    0.84      23.29 r
+  sqrt_u1/u_fa_PartRem_2_3/CO (ADDFXL)                    0.50      23.79 r
+  sqrt_u1/u_fa_PartRem_2_4/CO (ADDFXL)                    0.50      24.29 r
+  sqrt_u1/u_fa_PartRem_2_5/CO (ADDFXL)                    0.50      24.78 r
+  sqrt_u1/u_fa_PartRem_2_6/CO (ADDFXL)                    0.50      25.28 r
+  sqrt_u1/u_fa_PartRem_2_7/CO (ADDFXL)                    0.50      25.78 r
+  sqrt_u1/u_fa_PartRem_2_8/CO (ADDFXL)                    0.49      26.26 r
+  sqrt_u1/U11/Y (NOR2BX1)                                 0.18      26.44 f
+  sqrt_u1/U10/Y (CLKBUFX3)                                0.65      27.09 f
+  sqrt_u1/U84/Y (OAI21XL)                                 0.61      27.70 r
+  sqrt_u1/U83/Y (OAI21XL)                                 0.42      28.12 f
+  sqrt_u1/u_fa_PartRem_1_3/CO (ADDFXL)                    0.78      28.90 f
+  sqrt_u1/u_fa_PartRem_1_4/CO (ADDFXL)                    0.53      29.43 f
+  sqrt_u1/u_fa_PartRem_1_5/CO (ADDFXL)                    0.53      29.95 f
+  sqrt_u1/u_fa_PartRem_1_6/CO (ADDFXL)                    0.53      30.48 f
+  sqrt_u1/u_fa_PartRem_1_7/CO (ADDFXL)                    0.53      31.01 f
+  sqrt_u1/u_fa_PartRem_1_8/CO (ADDFXL)                    0.53      31.53 f
+  sqrt_u1/u_fa_PartRem_1_9/CO (ADDFXL)                    0.52      32.06 f
+  sqrt_u1/U56/Y (NOR2BX1)                                 0.69      32.74 r
+  sqrt_u1/U55/Y (OAI21XL)                                 0.29      33.03 f
+  sqrt_u1/U54/Y (OA21XL)                                  0.41      33.44 f
+  sqrt_u1/U51/Y (OAI2BB1X1)                               0.30      33.74 f
+  sqrt_u1/U50/Y (OA21XL)                                  0.38      34.12 f
+  sqrt_u1/U48/Y (AND2X1)                                  0.33      34.45 f
+  sqrt_u1/U47/Y (OAI22XL)                                 0.80      35.26 r
+  sqrt_u1/U46/Y (NOR2X1)                                  0.26      35.52 f
+  sqrt_u1/U44/Y (AOI2BB2X1)                               0.41      35.93 f
+  sqrt_u1/U43/Y (AND2X1)                                  0.33      36.26 f
+  sqrt_u1/U41/Y (OA22X1)                                  0.53      36.79 f
+  sqrt_u1/U39/Y (OAI2BB1X1)                               0.28      37.07 f
+  sqrt_u1/U38/Y (OA21XL)                                  0.37      37.45 f
+  sqrt_u1/U35/Y (OAI21XL)                                 0.79      38.24 r
+  sqrt_u1/U34/Y (NOR2X1)                                  0.26      38.49 f
+  sqrt_u1/U32/Y (AOI2BB2X1)                               0.42      38.91 f
+  sqrt_u1/U31/Y (NAND2X1)                                 0.34      39.25 r
+  sqrt_u1/U30/Y (AO21X1)                                  0.30      39.55 r
+  sqrt_u1/U28/Y (MXI2X1)                                  0.19      39.74 f
+  sqrt_u1/U3/Y (OAI21X1)                                  0.48      40.22 r
+  sqrt_u1/root[0] (geofence_DW_sqrt_0)                    0.00      40.22 r
+  add_0_root_add_0_root_add_206_3/B[0] (geofence_DW01_add_3)
+                                                          0.00      40.22 r
+  add_0_root_add_0_root_add_206_3/U4/Y (AND2X1)           0.32      40.54 r
+  add_0_root_add_0_root_add_206_3/U1_1/CO (ADDFXL)        0.47      41.01 r
+  add_0_root_add_0_root_add_206_3/U1_2/CO (ADDFXL)        0.50      41.51 r
+  add_0_root_add_0_root_add_206_3/U1_3/CO (ADDFXL)        0.50      42.01 r
+  add_0_root_add_0_root_add_206_3/U1_4/CO (ADDFXL)        0.50      42.50 r
+  add_0_root_add_0_root_add_206_3/U1_5/CO (ADDFXL)        0.50      43.00 r
+  add_0_root_add_0_root_add_206_3/U1_6/CO (ADDFXL)        0.50      43.50 r
+  add_0_root_add_0_root_add_206_3/U1_7/CO (ADDFXL)        0.50      43.99 r
+  add_0_root_add_0_root_add_206_3/U1_8/CO (ADDFXL)        0.50      44.49 r
+  add_0_root_add_0_root_add_206_3/U1_9/CO (ADDFXL)        0.68      45.17 r
+  add_0_root_add_0_root_add_206_3/U3/Y (NAND2X1)          0.21      45.38 f
+  add_0_root_add_0_root_add_206_3/U2/Y (XNOR2X1)          0.24      45.61 f
+  add_0_root_add_0_root_add_206_3/SUM[11] (geofence_DW01_add_3)
+                                                          0.00      45.61 f
+  S_reg[10]/D (EDFFX1)                                    0.00      45.61 f
+  data arrival time                                                 45.61
+
+  clock clk (rise edge)                                  50.00      50.00
+  clock network delay (ideal)                             0.50      50.50
+  clock uncertainty                                      -0.10      50.40
+  S_reg[10]/CK (EDFFX1)                                   0.00      50.40 r
+  library setup time                                     -0.64      49.76
+  data required time                                                49.76
+  --------------------------------------------------------------------------
+  data required time                                                49.76
+  data arrival time                                                -45.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.15
+
+
+1
